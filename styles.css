@@ -1,0 +1,38 @@
+.sortable{
+	font-size:15px;
+	
+	color:#cccccc;
+	border-collapse: collapse;
+	background-color: #000;
+	width:100%;
+	border-radius:8px;
+	margin:5px auto;
+	font-weight:500;
+	font-family: "Arial";
+	text-align: left;
+	overflow:auto;
+	position:relative;
+	
+}
+
+.sortable tr, td{
+color:#cccccc;
+border-bottom:0px solid #333333 ;
+padding: 5px 15px
+;	
+
+}
+.sortable th{
+color:#cccccc;
+border-bottom:1px solid #33333;
+padding: 12px 10px;	}
+
+
+        #table_detail tr:hover {
+            background-color: #F2F2F2;
+        }
+
+        #table_detail .hidden_row {
+            display: none;
+            background-color:#333;
+        }

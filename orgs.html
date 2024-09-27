@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js">
+    </script>
+    <link rel="stylesheet" href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+    <link rel="stylesheet" 
+        type="text/css" href=
+"https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+    <script type="text/javascript">
+        function showHideRow(row) {
+            $("#" + row).toggle();
+        }
+    </script>
+
+    <style>
+        
+        .sortable{
+	font-size:15px;
+	
+	color:#cccccc;
+	border-collapse: collapse;
+	background-color: #000;
+	width:98%;
+	border-radius:8px;
+	margin:5px auto;
+	font-weight:500;
+	font-family: "Arial";
+	text-align: left;
+	overflow:auto;
+	position:relative;
+	
+}
+
+.sortable tr, td{
+color:#cccccc;
+border-bottom:0px solid #333333 ;
+padding: 5px 15px
+;	
+
+}
+.sortable th{
+color:#cccccc;
+border-bottom:1px solid #33333;
+padding: 12px 10px;	}
+
+
+        #table_detail tr:hover {
+            background-color: #111524;
+        }
+
+        #table_detail .hidden_row {
+            display: none;
+            background-color: #333;
+        }
+    </style>
+</head>
+
+    <body style='background-color:#ffffff; font-family: Verdana, Geneva, Tahoma, sans-serif;color:'>
+   <header style='	width: 100%;
+    position: fixed;
+    top:0;
+	left:0;
+	right:0;
+	align-items: center;
+	background-color:#000;
+	#background-image:linear-gradient(to bottom,#000,#1a1f20);
+	z-index: 9;
+	height:60px;
+	box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+	border-bottom: 1px solid #000000;'>
+       
+        <p style='float:left; margin:10px;color:#fff;font-family:Verdana, Geneva, Tahoma, sans-serif'>Venue Scheduling System </p>
+        <a style = 'margin:5px;float:right;' href='rooms.html'><button  style=' border:none;background-color:#ffffff;margin-top:13px;vertical-align:middle;'>Rooms</button></a> 
+        <a style = 'margin:5px;float:right;' href='orgs.html'><button  style=' border:none;background-color:#ffffff;margin-top:13px;vertical-align:middle;'>Organizations</button></a> 
+        <a style = 'margin:5px;float:right;' href='index.html'><button  style=' border:none;background-color:#ffffff;margin-top:13px;vertical-align:middle;'>Home</button></a> 
+    
+       
+       
+       
+        </header>
+    <div id="wrapper">
+
+       <table class = 'sortable' id='table_detail' style='margin-top:70px;'>
+    <thead>
+                        <tr>
+                        <th>Org</th>
+                        <th>Personel</th>
+                        <th>Location</th>
+                        <th>Details</th>
+                        </tr>
+			
+			 
+    </thead>
+        
+                   
+            <tr onclick="showHideRow('hidden_row1');">
+                <td>Google</td>
+                <td>10,000</td>
+                <td>Mountain View, California</td>
+                <td style='font-size:12px;text-underline-position: below;'>Org Specificiations</td>
+            </tr>
+            <tr id="hidden_row1" class="hidden_row" >
+                     <td><a href='googmem.html'><button style='border:none;'>Members</button></a></td>>
+                <td>CEO:Susan Beck</td>
+                <td>Sector:Technology</td>
+                <td>Industry:Consumer Electronics</td>
+            </tr>
+            <tr onclick="showHideRow('hidden_row2');">
+                <td>ToysRus</td>
+                <td>1000</td>
+                <td>Neverland</td>
+                <td style='font-size:12px;text-underline-position: below;'>Org Specificiations</td>
+            </tr>
+            <tr id="hidden_row2" class="hidden_row" >
+                <td><a href='toysmem.html'><button style='border:none;'>Members</button></a></td>
+                <td>CEO:Drew Brees</td>
+                <td>Sector:Cosumer Products</td>
+                <td>Industry:Toys</td>
+            </tr>
+            <tr onclick="showHideRow('hidden_row3');">
+                <td>Grants Hardware</td>
+                <td>2</td>
+                <td>Houston, Texas</td>
+                <td style='font-size:12px;text-underline-position: below;'>Org Specificiations</td>
+            </tr>
+            <tr id="hidden_row3" class="hidden_row" >
+                     <td><a href='granmem.html'><button style='border:none;'>Members</button></a></td>
+                <td>CEO:General Grant </td>
+                <td>Sector:Cosumer Products</td>
+                <td>Industry:Hardware</td>
+            </tr>
+        
+ 
+        </table>    
+    </div>
+</body>
+
+</html>
